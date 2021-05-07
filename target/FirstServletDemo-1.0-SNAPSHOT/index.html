@@ -10,15 +10,29 @@
         input{
             font-size: 20px;
         }
+        form {
+            border: 1px;
+            border-color: black;
+            border-radius: 1px;
+        }
     </style>
 </head>
 <body>
     <form action="calculator" method="post">
         <div>
-            <input type="text"  name="number1"> + <input type="text"  name="number2">
+            <input type="text"  name="number1"> + <input type="text"  name="number2"> <!--= <input type="text"  name="result1"-->
         </div>
         <div>
-            <input type="text"  name="number3"> * <input type="text"  name="number4">
+            <input type="text"  name="number3"> * <input type="text"  name="number4"> <!--= <input type="text"  name="result2"-->
+        </div>
+        <input type = "submit">
+    </form>
+    <form action="calculatorImproved" method="post">
+        <div>
+            <input type="text"  name="number5"> + <input type="text"  name="number6"> = <input type="text"  name="result3">
+        </div>
+        <div>
+            <input type="text"  name="number7"> * <input type="text"  name="number8"> = <input type="text"  name="result4">
         </div>
         <input type = "submit">
     </form>

@@ -18,6 +18,7 @@ public class Calculator extends HttpServlet {
         String s1 = request.getParameter("number1");
         String s2 = request.getParameter("number2");
         if(s1 != null && s2 != null){
+            //Question result
             out.println( s1 + " + " + s2 + " = "  + (Integer.parseInt(s1) + Integer.parseInt(s2)  ));
         }
         String number3 = request.getParameter("number3");
@@ -25,7 +26,8 @@ public class Calculator extends HttpServlet {
 
         out.println("<br/>");
         if(number3 != null && number4 != null) {
-            out.println(number3 + " * " + number4 + " = " + (Integer.parseInt(number3) * Integer.parseInt(number4)));
+            //String res = " "+Integer.parseInt(number3) * Integer.parseInt(number4);
+             out.println(number3 + " * " + number4 + " = " + (Integer.parseInt(number3) * Integer.parseInt(number4)));
         }
         out.println("</body></html>");
     }
